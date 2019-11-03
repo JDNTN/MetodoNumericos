@@ -36,74 +36,37 @@ public class TablaFalsa {
         return interacion;
     }
 
-    public void setInteracion(int interacion) {
-        this.interacion = interacion;
-    }
-
     public double getX1() {
         return x1;
-    }
-
-    public void setX1(double x1) {
-        this.x1 = x1;
     }
 
     public double getXu() {
         return xu;
     }
 
-    public void setXu(double xu) {
-        this.xu = xu;
-    }
-
     public double getXr() {
         return xr;
-    }
-
-    public void setXr(double xr) {
-        this.xr = xr;
     }
 
     public double getFx1() {
         return fx1;
     }
 
-    public void setFx1(double fx1) {
-        this.fx1 = fx1;
-    }
-
     public double getFxu() {
         return fxu;
-    }
-
-    public void setFxu(double fxu) {
-        this.fxu = fxu;
     }
 
     public double getFxr() {
         return fxr;
     }
 
-    public void setFxr(double fxr) {
-        this.fxr = fxr;
-    }
-
     public double getEt() {
         return et;
-    }
-
-    public void setEt(double et) {
-        this.et = et;
     }
 
     public double getEa() {
         return ea;
     }
 
-    public void setEa(double ea) {
-        this.ea = ea;
-    }
-    
-    
-    
+   
 }
