@@ -35,6 +35,8 @@ public abstract class MetodosCerrados {
         if (sustituirValores.hasError()) {
             System.out.println(sustituirValores.getErrorInfo());
         }
+        System.out.println("Dato a evaluar: "+puntoEvaluar);
+        System.out.println("el valor es: "+sustituirValores.getValue());
         return String.valueOf(sustituirValores.getValue());
     }
 

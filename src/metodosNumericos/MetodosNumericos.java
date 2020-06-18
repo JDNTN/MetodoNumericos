@@ -1,8 +1,5 @@
 package metodosNumericos;
 
-import FrontEndAbiertos.PuntoFijo;
-import FrontEndCerrados.Falso;
-import FrontEndCerrados.Biseccion;
 import Manejador.Menu;
 import java.util.Scanner;
 

@@ -16,9 +16,9 @@ public class ManejadorBiseccion extends MetodosCerrados {
     static String fxr;
 
     public static List<TablaBiseccion> generarTablaInteraciones(String funcion, double valor1, double valor2, int interaciones) {
-        List<TablaBiseccion> tabla = new ArrayList<>();        
+        List<TablaBiseccion> tabla = new ArrayList<>();
         x1 = valor1;
-        xu = valor2;        
+        xu = valor2;
         for (int interacion = 0; interacion < interaciones; interacion++) {
             xr = valorXr(x1, xu);
             valorProximoActual = xr;
@@ -37,22 +37,21 @@ public class ManejadorBiseccion extends MetodosCerrados {
     public static List<TablaBiseccion> generarTablaPorcentual(String funcion, double valor1, double valor2, double porcentaje) {
         List<TablaBiseccion> tabla = new ArrayList<>();
         limpiarVariables();
+        int contador = 0;
         x1 = valor1;
         xu = valor2;
-        int contador = 0;
-        while (porcentaje < ea) {
-            contador++;
-            xr = valorXr(x1, xu);            
+        while (porcentaje < ea) {            
+            xr = valorXr(x1, xu);
+            valorProximoActual = Math.abs(xr);
             fx1 = obtenerSigno(funcion, x1);
             fxu = obtenerSigno(funcion, xu);
             fxr = obtenerSigno(funcion, xr);
-            valorProximoActual = Math.abs(xr);
             ea = obtenerEA();
+            contador++;
             interacionTabla = new TablaBiseccion(contador, x1, xu, xr, fx1, fxu, fxr, et, ea);
             tabla.add(interacionTabla);
             valorProximoAnterior = Math.abs(xr);
-            System.out.println(x1);
-            cambioValorX(fx1, fxu, fxr, xr);
+            cambioValorX(fx1, fxu, fxr, xr);            
         }
         return tabla;
     }
@@ -62,7 +61,7 @@ public class ManejadorBiseccion extends MetodosCerrados {
     }
 
     private static String obtenerSigno(String funcion, double valor) {
-        double val = Double.parseDouble(ManejadorBiseccion.sustituirValoresEnFuncionDerivada(funcion, valor));
+        double val = Double.parseDouble(sustituirValoresEnFuncionDerivada(funcion, valor));
         if (val > 0) {
             return "+";
         } else if (val < 0) {

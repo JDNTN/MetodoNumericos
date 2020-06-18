@@ -66,7 +66,7 @@ public class NewtonRaphson extends javax.swing.JDialog {
 
         jLabel3.setText("Segunda Derivada");
 
-        jTextField1.setText("-0.875*x^2+1.75*x+2.625");
+        jTextField1.setText("8.5-21.963*x+16.296*x^2-3.70377*x^3");
 
         jButton1.setText("Derivar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -81,7 +81,7 @@ public class NewtonRaphson extends javax.swing.JDialog {
 
         jTextField4.setText("3");
 
-        jTextField5.setText("0.001");
+        jTextField5.setText("0.05");
 
         jButton2.setText("Tabla");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -195,7 +195,7 @@ public class NewtonRaphson extends javax.swing.JDialog {
         String segundaDeriva = jTextField3.getText();
         double porcentaje= Double.parseDouble(jTextField5.getText());
         double valor=Double.parseDouble(jTextField4.getText());        
-        listaDatos=ManejadorNewtonRaphson.metodoNewton(funcion, primeraDerivada, segundaDeriva, porcentaje, 0, valor);  
+        listaDatos=ManejadorNewtonRaphson.metodoNewton(funcion, primeraDerivada, segundaDeriva, porcentaje, 1.1, valor);  
         actualizarLista(listaDatos);
     }//GEN-LAST:event_jButton2ActionPerformed
 

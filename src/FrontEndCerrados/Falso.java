@@ -65,6 +65,7 @@ public class Falso extends javax.swing.JDialog {
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Falsa Posicion");
 
         textoFuncion.setText("e^-x-x");
         textoFuncion.addActionListener(new java.awt.event.ActionListener() {

@@ -1,6 +1,7 @@
 package FrontEndCerrados;
 
 import Objetos.ManejadorBiseccion;
+import Objetos.Secante;
 import Objetos.TablaBiseccion;
 import java.util.ArrayList;
 import java.util.List;
@@ -65,18 +66,19 @@ public class Biseccion extends javax.swing.JDialog {
         botonInteracionBiseccion = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Biseccion");
 
         jLabel2.setText("Limite 1");
 
         jLabel3.setText("Limite 2");
 
-        textoFuncion.setText("(x^2)*abs(x*(1/2))-5");
+        textoFuncion.setText("x-2^-x");
 
-        textoValor1.setText("0");
+        textoValor1.setText("-1");
 
         jLabel5.setText("X1");
 
-        textoValor2.setText("5");
+        textoValor2.setText("0.5");
 
         jLabel6.setText("Xu");
 
@@ -90,6 +92,8 @@ public class Biseccion extends javax.swing.JDialog {
         jLabel7.setText("Xr");
 
         jLabel4.setText("Interaciones/%");
+
+        textoIntereaciones.setText("0.05");
 
         jLabel8.setText("Ea");
 
@@ -232,10 +236,9 @@ public class Biseccion extends javax.swing.JDialog {
         String funcion = textoFuncion.getText();
         double valor1 = Double.parseDouble(textoValor1.getText());
         double valor2 = Double.parseDouble(textoValor2.getText());
-
         double porcentaje = Double.parseDouble(textoIntereaciones.getText());
         tabla = ManejadorBiseccion.generarTablaPorcentual(funcion, valor1, valor2, porcentaje);
-        actualizarLista(tabla);
+        actualizarLista(tabla);             
     }//GEN-LAST:event_botonPorcentajeBiseccionActionPerformed
 
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked

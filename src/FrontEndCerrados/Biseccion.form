@@ -3,6 +3,7 @@
 <Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="title" type="java.lang.String" value="Biseccion"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -129,14 +130,14 @@
     </Component>
     <Component class="javax.swing.JTextField" name="textoFuncion">
       <Properties>
-        <Property name="text" type="java.lang.String" value="(x^2)*abs(x*(1/2))-5"/>
+        <Property name="text" type="java.lang.String" value="x-2^-x"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="xrText">
     </Component>
     <Component class="javax.swing.JTextField" name="textoValor1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="0"/>
+        <Property name="text" type="java.lang.String" value="-1"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel5">
@@ -146,7 +147,7 @@
     </Component>
     <Component class="javax.swing.JTextField" name="textoValor2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="5"/>
+        <Property name="text" type="java.lang.String" value="0.5"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
@@ -175,6 +176,9 @@
     <Component class="javax.swing.JTextField" name="eaText">
     </Component>
     <Component class="javax.swing.JTextField" name="textoIntereaciones">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0.05"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel8">
       <Properties>
