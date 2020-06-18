@@ -1,7 +1,7 @@
 package FrontEndAbiertos;
 
-import Objetos.ManejadorPunto;
-import Objetos.TablaPunto;
+import Manejador.ManejadorPunto;
+import Tablas.TablaPunto;
 import java.util.ArrayList;
 import java.util.List;
 import org.jdesktop.observablecollections.ObservableCollections;

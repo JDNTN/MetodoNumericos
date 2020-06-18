@@ -1,8 +1,8 @@
 package FrontEndCerrados;
 
-import Objetos.ManejadorBiseccion;
-import Objetos.Secante;
-import Objetos.TablaBiseccion;
+import Manejador.ManejadorBiseccion;
+import Manejador.Secante;
+import Tablas.TablaBiseccion;
 import java.util.ArrayList;
 import java.util.List;
 import org.jdesktop.observablecollections.ObservableList;

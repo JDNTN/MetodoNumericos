@@ -1,8 +1,8 @@
 package FrontEndAbiertos;
 
-import Objetos.Derivadas;
-import Objetos.ManejadorNewtonRaphson;
-import Objetos.TablaNewton;
+import Derivadas.Derivadas;
+import Manejador.ManejadorNewtonRaphson;
+import Tablas.TablaNewton;
 import java.util.ArrayList;
 import java.util.List;
 import org.jdesktop.observablecollections.ObservableList;

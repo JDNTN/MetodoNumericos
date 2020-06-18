@@ -1,7 +1,7 @@
 package FrontEndCerrados;
 
-import Objetos.ManejadorFalsa;
-import Objetos.TablaFalsa;
+import Manejador.ManejadorFalsa;
+import Tablas.TablaFalsa;
 import java.util.ArrayList;
 import java.util.List;
 import org.jdesktop.observablecollections.ObservableList;
